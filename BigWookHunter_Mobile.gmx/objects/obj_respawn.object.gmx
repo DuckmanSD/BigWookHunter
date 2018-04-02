@@ -76,7 +76,7 @@
             <string>/// enemy creation
 
 
-newinst = instance_create(0,220,obj_enemy);
+newinst = instance_create(0,220,obj_enemy_parent);
 
 with(newinst) {
     var tries, done;
@@ -115,7 +115,7 @@ with(newinst) {
             <string>/// bystander creation
 
 
-newinst = instance_create(0,220,obj_bystander);
+newinst = instance_create(0,220,obj_bystander_parent);
 
 with(newinst) {
     var tries, done;
@@ -238,7 +238,7 @@ with(newinst) {
             <string>/// enemy creation
 
 
-newinst = instance_create(0,220,obj_enemy);
+newinst = instance_create(0,220,obj_enemy_parent);
 
 with(newinst) {
     var tries, done;
@@ -277,7 +277,7 @@ with(newinst) {
             <string>/// bystander creation
 
 
-newinst = instance_create(0,220,obj_bystander);
+newinst = instance_create(0,220,obj_bystander_parent);
 
 with(newinst) {
     var tries, done;

@@ -191,9 +191,31 @@
             <string> x += (device_get_tilt_y()*random(5));
  if x &lt; 5  x = 5;
  if x &gt;945 x = 945
+ 
+ if obj_bystander_parent.y &gt;400
+ {
+  image_yscale  +=  0.005
+  image_xscale += 0.005
+  }
 </string>
           </argument>
         </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_killbar">
+      <action>
+        <libid>1</libid>
+        <id>203</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_kill_object</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
       </action>
     </event>
     <event eventtype="4" ename="floor_obj">
@@ -248,7 +270,7 @@
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_bystander">
+    <event eventtype="4" ename="obj_bystander_parent">
       <action>
         <libid>1</libid>
         <id>115</id>
@@ -274,7 +296,7 @@
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_enemy">
+    <event eventtype="4" ename="obj_enemy_parent">
       <action>
         <libid>1</libid>
         <id>115</id>
@@ -340,6 +362,20 @@
             <string>0</string>
           </argument>
         </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>203</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_kill_object</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
       </action>
       <action>
         <libid>1</libid>
