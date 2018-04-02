@@ -17,6 +17,7 @@
     <sprite>sprites\sprite4</sprite>
     <sprite>sprites\sprite5</sprite>
     <sprite>sprites\spr_killbar</sprite>
+    <sprite>sprites\sprite7</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -25,11 +26,14 @@
     <object>objects\obj_gameControl</object>
     <object>objects\obj_enemy_parent</object>
     <object>objects\obj_bystander_parent</object>
+    <object>objects\obj_bystander_forground</object>
+    <object>objects\obj_bystander_closest</object>
     <object>objects\obj_player</object>
     <object>objects\floor_obj</object>
     <object>objects\obj_killbar</object>
     <object>objects\obj_respawn</object>
     <object>objects\obj_lvl1_control</object>
+    <object>objects\obj_background</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_init_game</room>
