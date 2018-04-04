@@ -18,6 +18,7 @@
     <sprite>sprites\sprite5</sprite>
     <sprite>sprites\spr_killbar</sprite>
     <sprite>sprites\sprite7</sprite>
+    <sprite>sprites\sprite8</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -34,10 +35,13 @@
     <object>objects\obj_respawn</object>
     <object>objects\obj_lvl1_control</object>
     <object>objects\obj_background</object>
+    <object>objects\obj_gameoversign</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_init_game</room>
     <room>rooms\rm_splash</room>
+    <room>rooms\rm_gameOver</room>
+    <room>rooms\rm_lvl_2</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

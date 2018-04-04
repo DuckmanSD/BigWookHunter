@@ -31,6 +31,8 @@ if os_type == os_android || os_type == os_ios
    {
    os_lock_orientation(true);
    }
+   
+   global.kills = 0
 </string>
           </argument>
         </arguments>
@@ -51,7 +53,7 @@ if os_type == os_android || os_type == os_ios
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>3</string>
+            <string>2</string>
           </argument>
         </arguments>
       </action>
@@ -59,17 +61,23 @@ if os_type == os_android || os_type == os_ios
     <event eventtype="2" enumb="0">
       <action>
         <libid>1</libid>
-        <id>331</id>
+        <id>224</id>
         <kind>0</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>0</useapplyto>
         <exetype>1</exetype>
-        <functionname>action_restart_game</functionname>
+        <functionname>action_another_room</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>11</kind>
+            <room>rm_gameOver</room>
+          </argument>
+        </arguments>
       </action>
     </event>
     <event eventtype="3" enumb="0">
@@ -362,6 +370,62 @@ if os_type == os_android || os_type == os_ios
           <argument>
             <kind>4</kind>
             <string>12</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>703</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_draw_score</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>300</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>20</string>
+          </argument>
+          <argument>
+            <kind>1</kind>
+            <string>Score: </string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>613</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_draw_variable</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>global.kills</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>100</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>20</string>
           </argument>
         </arguments>
       </action>

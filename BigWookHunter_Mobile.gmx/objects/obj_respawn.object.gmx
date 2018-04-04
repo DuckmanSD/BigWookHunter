@@ -250,7 +250,7 @@ with(newinst) {
     do {
         tries += 1;
         x = irandom(room_width);
-        done = !place_meeting(x+20,y+20,object_index);
+        done = !place_meeting(x+10,y+10,object_index);
     } until(done or tries&gt;100);
     if(not done) {
         // not enough space (or bad luck), bail out
@@ -258,6 +258,7 @@ with(newinst) {
     }
 }
 
+enspawn = random_range(30,200)
 </string>
           </argument>
         </arguments>
@@ -278,7 +279,7 @@ with(newinst) {
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>100</string>
+            <string>enspawn</string>
           </argument>
           <argument>
             <kind>4</kind>
@@ -361,25 +362,6 @@ with(newinst) {
             <string>/// enemy creation
 
 
-// bystander creation
-
-
-newinst = instance_create(0,350,obj_bystander_parent);
-
-with(newinst) {
-    var tries, done;
-    tries = 0;
-    done = false;
-    do {
-        tries += 1;
-        x = irandom(room_width);
-        done = !place_meeting(x+20,y+20,object_index);
-    } until(done or tries&gt;50);
-    if(not done) {
-        // not enough space (or bad luck), bail out
-        instance_destroy();
-    }
-}
 
 newinst = instance_create(0,350,obj_bystander_forground);
 
